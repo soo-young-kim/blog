@@ -1,47 +1,32 @@
-  <!-- Footer -->
-  <footer class="footer" id="footer" style="background-color:white;">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-        </div>
-		<!-- Social Media -->
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-		  {% for link in site.data.sitetext.footer.social  %}
-            <li class="list-inline-item">
-			  {% if link.url %}
-              <a href="{{ link.url }}">
-                {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-              </a>
-			  {% endif %}
-            </li>
-			{% endfor %}
-          </ul>
-        </div>
-		<!-- Legal -->
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="legal">{{ site.data.sitetext.footer.legal | default: "Privacy Policy" }}</a>
-            </li>
-          </ul>
-        </div>
+<footer class="t-hackcss-footer">
+  <hr />
+
+  <h3 class="footer-heading">{{ site.title }}</h3>
+
+  <div class="grid t-hackcss-sm-reversed-grid">
+
+    <div class="cell -5of12">
+      <div class="contact-list">
+        <p>
+          {{ site.your_name }},
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+
+        {% for social in site.social %}
+          {% assign template = social.service|prepend:"icon-"|append:".html" %}
+          <span class="t-hackcss-social">
+            <i class="t-hackcss-icon">{% include {{ template }} %}</i>
+            <a href="{{ social.link }}">{{ social.username }}</a>
+          </span>
+        {% endfor %}
       </div>
     </div>
-  </footer>
-{% if page.layout == "page" %}
-<script>
-fixPageShort();
-function fixPageShort() {
-  if(window.innerHeight > document.body.offsetHeight) {
-    document.getElementById("footer").style.position="fixed";
-    document.getElementById("footer").style.bottom=0;
-    document.getElementById("footer").style.right=0;
-    document.getElementById("footer").style.left=0;
-    document.getElementById("footer").style.width="100%";
-  }
-}
-</script>
-{% endif %}
-  <!-- End Footer -->
+
+    <div id="footer-spacer" class="cell -1of12"></div>
+
+    <div class="cell -6of12">
+      <p>{{ site.description }}</p>
+    </div>
+  </div>
+
+</footer>

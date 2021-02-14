@@ -3,25 +3,34 @@
 
   {% include head.html %}
 
-  <body id="page-top">
 
-      {{ content }}
+  {% if site.theme_mode == 'markdown' %}
+  <body class="hack">
+  {% elsif site.theme_mode == 'standard' %}
+  <body class="standard">
+  {% elsif site.theme_mode == 'dark' %}
+  <body class="hack dark">
+  {% endif %}
 
-	  {% include footer.html %}
+    {% include github-ribbon.html %}
 
-	  <!-- Bootstrap core JavaScript -->
-	  <script src="assets/js/jquery.min.js"></script>
-	  <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+      <div class="grid">
+        <aside class="cell -3of12" role="navigation">
+          {% include navigation.html %}
+        </aside>
 
-	  <!-- Plugin JavaScript -->
-	  <script src="assets/js/jquery.easing.min.js"></script>
+        <main class="cell -9of12">
+          {{ content }}
+        </main>
+      </div>
 
-	  <!-- Contact form JavaScript -->
-	  <script src="assets/js/jqBootstrapValidation.js"></script>
-	  <script src="assets/js/contact_me.js"></script>
+    {% include footer.html %}
 
-	  <!-- Custom scripts for this template -->
-	  <script src="assets/js/agency.min.js"></script>
+    </div>
 
+    <!-- Prism.js -->
+    <script src="https://npmcdn.com/prismjs@1.5.1/prism.js"></script>
   </body>
+
 </html>
