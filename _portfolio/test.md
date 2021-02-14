@@ -3,13 +3,6 @@ caption: #what displays in the portfolio grid:
   title: Markdown 사용 설명서
   subtitle: 기초
   thumbnail: https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
-  
-#what displays when the item is clicked:
-title: Markdown
-subtitle: subtitle lorem ipsum dolor sit amet consectetur.
-image: https://place-hold.it/400x300 #main image, can be a link or a file in assets/img/portfolio
-alt: image alt text
-
 ---
 
 # 2.1 헤더Headers
@@ -41,9 +34,9 @@ This is an H2
 - 입력할 문장 앞에 >, >  >,.... 를 입력
 
 Ex)
-> this is a first 
->  > this is a second 
->  >  > this is a third 
+>this is a first. 
+>  >this is a second. 
+>  >  >this is a third. 
 
 이 안에는 다른 마크다운 요소를 포함 할수있다.
 
