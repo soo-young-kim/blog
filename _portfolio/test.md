@@ -1,18 +1,18 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: test.md
-  subtitle: subtitle
+  title: Markdown 사용 설명서
+  subtitle: 기초
   thumbnail: https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
   
 #what displays when the item is clicked:
-title: Title
+title: Markdown
 subtitle: subtitle lorem ipsum dolor sit amet consectetur.
 image: https://place-hold.it/400x300 #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
 
 ---
 
-#2.1 헤더Headers
+# 2.1 헤더Headers
 -큰제목: 문서 제목
 - 제목으로 할 단어 아래 ========= 삽입
 
@@ -36,7 +36,7 @@ This is an H2
 ###### 예시 6
 ####### 지원 X
 
-#2.2 Block Quote
+# 2.2 Block Quote
 -이메일에서 사용하는 > 블럭인용문자를 사용한다.
 - 입력할 문장 앞에 >, >  >,.... 를 입력
 
@@ -49,7 +49,7 @@ Ex)
 
 > ##### 이렇게 할수있다
 
-#2.3. 목록
+# 2.3. 목록
 
 
 
