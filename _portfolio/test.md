@@ -1,6 +1,6 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: test.nd
+  title: test.md
   subtitle: subtitle
   
 #what displays when the item is clicked:
@@ -11,4 +11,4 @@ alt: image alt text
 
 ---
 
-asdkadkad
+hello world
