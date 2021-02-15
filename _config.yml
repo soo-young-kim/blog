@@ -8,7 +8,7 @@
 # Site settings
 title: Development BLOG
 description: > # this means to ignore newlines until "baseurl:"
-  A minimalistic theme for Jekyll, based on hack.css
+  Soo Young's first blog
 repository: https://github.com/wemake-services/jekyll-theme-hackcss
 baseurl: /blog  # the subpath of your site, e.g. /blog
 url: https://soo-young-kim.github.io  # the base hostname & protocol for your site
