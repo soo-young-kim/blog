@@ -53,8 +53,8 @@ projects:
 
 social:
   - service: github
-    username: sobolevn
-    link: https://github.com/sobolevn
+    username: soo-young-kim
+    link: https://github.com/soo-young-kim/blog
 
 # Plugins
 gems:
