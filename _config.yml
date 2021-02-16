@@ -25,7 +25,7 @@ theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown'
 
 # Customizations
 your_name: Soo Young Kim
-email: john55558@gmail.com
+email: john555578@gmail.com
 
 navigation:
   - text: Home
@@ -55,9 +55,6 @@ social:
   - service: github
     username: sobolevn
     link: https://github.com/sobolevn
-  - service: twitter
-    username: sobolevn
-    link: https://twitter.com/sobolevn
 
 # Plugins
 gems:
