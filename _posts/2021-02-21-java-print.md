@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java 주석
+title: Java print
 date: 2021-2-21
 image_preview: https://t1.daumcdn.net/cfile/tistory/2319C74A562F295521
 ---
