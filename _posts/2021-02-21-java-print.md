@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java print
+title: Java 주석
 date: 2021-2-21
 image_preview: https://t1.daumcdn.net/cfile/tistory/2319C74A562F295521
 ---
@@ -25,8 +25,9 @@ System.out.println("입니다"); //로 입력하면 줄이 바뀜
       입니다
 ```
 3
-----
-print에서 줄바꿈을 하는 방법
+------
+
+- print에서 줄바꿈을 하는 방법
 ```java
 int num = 10;
 System.out.print("num은 " + num);
